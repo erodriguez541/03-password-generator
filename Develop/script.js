@@ -6,10 +6,14 @@ var generateBtn = confirm("Do you need a new Password?")
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-////Code will go here will create a function generatePassword()
+  var lengthprompt = parseInt (prompt("How many characters would you like your password to contain?"));
+  var uppercase = [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z]
+  var lowercase = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
+  var numbers = [1,2,3,4,5,6,7,8,9,10]
+  ////Code will go here will create a function generatePassword()
   enter = parseInt (prompt("How many characters would you like your password? Choose between 8 and 128"))
   if (!enter){
-    alert("This needs a value")
+    alert("This needs a value");
   }
   wordText.value = password;
 }
