@@ -29,7 +29,7 @@ if(!uppercaseletters && !lowercaseletters && !specialchar && !numericchar){
   alert('Password needs at least one of these characters.');
   return;
 }
-
+ 
 }
 questions();
   // Write password to the #password input
@@ -42,7 +42,11 @@ function writePassword() {
   var numbers = [1,2,3,4,5,6,7,8,9,0];
   var special = ['','!','"','#','$','%','&','(',')','*','+',',','-','/',':',';','<','=','>','?','@','[',']','^','_','`','{','}','|','~'];
   ////Code will go here will create a function generatePassword()
-if(questions.uppercaseletters)
+if(questions.uppercaseletters){
+  for(i=0; i<uppercase.length; ++i){
+    passwordText.textContent
+  }
+}
 
   wordText.value = password;
 }
