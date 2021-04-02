@@ -42,10 +42,10 @@ function writePassword() {
   var numbers = [1,2,3,4,5,6,7,8,9,0];
   var special = ['','!','"','#','$','%','&','(',')','*','+',',','-','/',':',';','<','=','>','?','@','[',']','^','_','`','{','}','|','~'];
   ////Code will go here will create a function generatePassword()
+if(questions.uppercaseletters)
 
-}
   wordText.value = password;
-
+}
 
 
 // Add event listener to generate button
