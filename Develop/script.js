@@ -44,10 +44,27 @@ function writePassword() {
   ////Code will go here will create a function generatePassword()
 if(questions.uppercaseletters){
   for(i=0; i<uppercase.length; ++i){
-    passwordText.textContent
+    passwordText.push(uppercase[i]);
   }
 }
-
+if(questions.lowercaseletters){
+  for(i=0; i<lowercase.length; ++i){
+    passwordText.push(lowercase[i]);
+  }
+}
+if(questions.specialchar){
+  for(i=0; i<special.length; ++i){
+    passwordText.push(special[i]);
+  }
+}
+if(questions.numericchar){
+  for(i=0; i<numbers.length; ++i){
+  passwordText.push(numbers[i]);
+}}
+for(let i =0; i<questions.length; ++i){
+  var randompass = Math.floor(Math.random()*Math.floor(passwordText.length));
+    password.push(questions[randompass])
+}
   wordText.value = password;
 }
 
